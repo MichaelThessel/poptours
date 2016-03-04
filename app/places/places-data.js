@@ -11,15 +11,6 @@ System.register([], function(exports_1, context_1) {
                     name: 'Hawaii',
                     banner: {
                         image: 'media/tours/header-hawaii.jpg',
-                        subText: 'Hawaii'
-                    }
-                },
-                {
-                    slug: 'yukon',
-                    name: 'Yukon',
-                    banner: {
-                        image: 'media/tours/header-yukon.jpg',
-                        subText: 'Yukon'
                     }
                 }
             ]);

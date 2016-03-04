@@ -31,7 +31,8 @@ System.register(['angular2/core', 'angular2/router', '../banner-component/banner
             }],
         execute: function() {
             Tours = (function () {
-                function Tours(_routeParams, _toursService, _placesService) {
+                function Tours(_router, _routeParams, _toursService, _placesService) {
+                    this._router = _router;
                     this._routeParams = _routeParams;
                     this._toursService = _toursService;
                     this._placesService = _placesService;
@@ -47,13 +48,17 @@ System.register(['angular2/core', 'angular2/router', '../banner-component/banner
                         .then(function (banner) { return _this.bannerSettings = _this.place.banner; }); });
                     ;
                 };
+                Tours.prototype.navigateTour = function (tour) {
+                    var link = ['Tour', { slug: tour.slug }];
+                    this._router.navigate(link);
+                };
                 Tours = __decorate([
                     core_1.Component({
                         selector: 'tours',
                         templateUrl: 'app/tours/tours.html',
                         directives: [banner_component_1.BannerComponent]
                     }), 
-                    __metadata('design:paramtypes', [router_1.RouteParams, tours_service_1.ToursService, places_service_1.PlacesService])
+                    __metadata('design:paramtypes', [router_1.Router, router_1.RouteParams, tours_service_1.ToursService, places_service_1.PlacesService])
                 ], Tours);
                 return Tours;
             }());

@@ -1,11 +1,12 @@
 import {Component, OnInit} from 'angular2/core';
-import {RouteParams} from 'angular2/router';
+import {RouteParams, Router} from 'angular2/router';
 
 import {BannerComponent} from '../banner-component/banner.component';
 
 import {ToursService} from './tours.service';
-import {Place} from './tour';
 import {PlacesService} from '../places/places.service';
+import {Place} from '../places/place';
+import {Tour} from '../tour';
 
 @Component({
     selector: 'tours',
@@ -19,6 +20,7 @@ export class Tours implements OnInit {
     place: Place;
 
     constructor(
+        private _router: Router,
         private _routeParams: RouteParams,
         private _toursService: ToursService,
         private _placesService: PlacesService
@@ -34,5 +36,10 @@ export class Tours implements OnInit {
                     .then(tours => this.tours = tours)
                     .then(banner => this.bannerSettings = this.place.banner);
             );
+    }
+
+    navigateTour(tour: Tour) {
+        let link = ['Tour', { slug: tour.slug }];
+        this._router.navigate(link);
     }
 }

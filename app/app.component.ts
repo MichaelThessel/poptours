@@ -3,6 +3,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router'
 
 import {Home} from './home/home';
 import {Tours} from './tours/tours';
+import {Tour} from './tour/tour';
 import {ToursService} from './tours/tours.service';
 import {PlacesService} from './places/places.service';
 
@@ -25,6 +26,11 @@ import {PlacesService} from './places/places.service';
         name: 'Tours',
         component: Tours,
     },
+    {
+        path: '/tour/:slug',
+        name: 'Tour',
+        component: Tour,
+    }
 ])
 
 export class AppComponent {}

@@ -14,7 +14,6 @@ import {Place} from '../places/place';
 export class Home implements OnInit {
     bannerSettings: Banner = {
         image: 'media/home/header.jpg',
-        subText: 'place based political tours'
     };
 
     constructor(private _router: Router, private _placesService: PlacesService) {}
@@ -24,7 +23,7 @@ export class Home implements OnInit {
             then(places => this.places = places);
     }
 
-    selectPlace(place: Place) {
+    navigateTours(place: Place) {
         let link = ['Tours', { slug: place.slug }];
         this._router.navigate(link);
     }

@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './home/home', './tours/tours', './tours/tours.service', './places/places.service'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './home/home', './tours/tours', './tour/tour', './tours/tours.service', './places/places.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './home/home', './tours/tou
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, home_1, tours_1, tours_service_1, places_service_1;
+    var core_1, router_1, home_1, tours_1, tour_1, tours_service_1, places_service_1;
     var AppComponent;
     return {
         setters:[
@@ -25,6 +25,9 @@ System.register(['angular2/core', 'angular2/router', './home/home', './tours/tou
             },
             function (tours_1_1) {
                 tours_1 = tours_1_1;
+            },
+            function (tour_1_1) {
+                tour_1 = tour_1_1;
             },
             function (tours_service_1_1) {
                 tours_service_1 = tours_service_1_1;
@@ -55,6 +58,11 @@ System.register(['angular2/core', 'angular2/router', './home/home', './tours/tou
                             name: 'Tours',
                             component: tours_1.Tours,
                         },
+                        {
+                            path: '/tour/:slug',
+                            name: 'Tour',
+                            component: tour_1.Tour,
+                        }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

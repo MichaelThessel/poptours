@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', '../banner-component/banner.component', '../places/places.service'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', '../banner-component/banner.component', '../tours/tours.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,8 +10,8 @@ System.register(['angular2/core', 'angular2/router', '../banner-component/banner
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, banner_component_1, places_service_1;
-    var Home;
+    var core_1, router_1, banner_component_1, tours_service_1;
+    var Tour;
     return {
         setters:[
             function (core_1_1) {
@@ -23,39 +23,34 @@ System.register(['angular2/core', 'angular2/router', '../banner-component/banner
             function (banner_component_1_1) {
                 banner_component_1 = banner_component_1_1;
             },
-            function (places_service_1_1) {
-                places_service_1 = places_service_1_1;
+            function (tours_service_1_1) {
+                tours_service_1 = tours_service_1_1;
             }],
         execute: function() {
-            Home = (function () {
-                function Home(_router, _placesService) {
-                    this._router = _router;
-                    this._placesService = _placesService;
-                    this.bannerSettings = {
-                        image: 'media/home/header.jpg',
-                    };
+            Tour = (function () {
+                function Tour(_routeParams, _toursService) {
+                    this._routeParams = _routeParams;
+                    this._toursService = _toursService;
                 }
-                Home.prototype.ngOnInit = function () {
+                Tour.prototype.ngOnInit = function () {
                     var _this = this;
-                    this._placesService.getPlaces().
-                        then(function (places) { return _this.places = places; });
+                    var slug = this._routeParams.get('slug');
+                    this._toursService.getTour(slug).
+                        then(function (tour) { return _this.tour = tour; }).
+                        then(function (banner) { return _this.bannerSettings = _this.tour.banner; });
                 };
-                Home.prototype.navigateTours = function (place) {
-                    var link = ['Tours', { slug: place.slug }];
-                    this._router.navigate(link);
-                };
-                Home = __decorate([
+                Tour = __decorate([
                     core_1.Component({
-                        selector: 'my-home',
-                        templateUrl: './app/home/home.html',
+                        selector: 'tour',
+                        templateUrl: 'app/tour/tour.html',
                         directives: [banner_component_1.BannerComponent]
                     }), 
-                    __metadata('design:paramtypes', [router_1.Router, places_service_1.PlacesService])
-                ], Home);
-                return Home;
+                    __metadata('design:paramtypes', [router_1.RouteParams, tours_service_1.ToursService])
+                ], Tour);
+                return Tour;
             }());
-            exports_1("Home", Home);
+            exports_1("Tour", Tour);
         }
     }
 });
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=tour.js.map
