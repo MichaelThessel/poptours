@@ -1,0 +1,5 @@
+.tour {
+  &.content {
+    @include span-columns(12);
+  }
+}

@@ -470,3 +470,19 @@ a {
       width: 100%; }
       .home .intro:last-child {
         margin-right: 0; } }
+
+.tours.content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .tours.content:last-child {
+    margin-right: 0; }
+
+.tour.content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .tour.content:last-child {
+    margin-right: 0; }

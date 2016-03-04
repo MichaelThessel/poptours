@@ -1,7 +1,7 @@
 <banner [banner]="bannerSettings"></banner>
 
-<div class="page-wrapper">
-  <div class="home content">
+<div class="page-wrapper" *ngIf="tours">
+  <div class="tours content">
     <h3>Tours</h3>
     <ul>
       <li *ngFor="#tour of tours"><a (click)="navigateTour(tour)">{{tour.title}}</a></li>
