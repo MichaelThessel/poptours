@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../banner-component/banner.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,37 +10,29 @@ System.register(['angular2/core', '../banner-component/banner.component'], funct
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, banner_component_1;
-    var Home;
+    var core_1;
+    var BannerComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (banner_component_1_1) {
-                banner_component_1 = banner_component_1_1;
             }],
         execute: function() {
-            Home = (function () {
-                function Home() {
-                    this.bannerSettings = {
-                        image: 'media/home/header.jpg',
-                        heading: 'Pop Tours',
-                        subText: 'place based political tours'
-                    };
+            BannerComponent = (function () {
+                function BannerComponent() {
                 }
-                Home = __decorate([
+                BannerComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-home',
-                        templateUrl: './app/home/home.html',
-                        directives: [banner_component_1.BannerComponent]
+                        selector: 'banner',
+                        templateUrl: 'app/banner-component/banner.component.html',
+                        inputs: ['banner']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], Home);
-                return Home;
+                ], BannerComponent);
+                return BannerComponent;
             }());
-            exports_1("Home", Home);
+            exports_1("BannerComponent", BannerComponent);
         }
     }
 });
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=banner.component.js.map

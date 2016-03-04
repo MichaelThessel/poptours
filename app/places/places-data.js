@@ -6,8 +6,24 @@ System.register([], function(exports_1, context_1) {
         setters:[],
         execute: function() {
             exports_1("PLACES", PLACES = [
-                { slug: 'hawaii', name: "Hawaii" },
-                { slug: 'yukon', name: "Yukon" },
+                {
+                    slug: 'hawaii',
+                    name: 'Hawaii',
+                    banner: {
+                        image: 'media/tours/header-hawaii.jpg',
+                        heading: 'Pop Tours',
+                        subText: 'Hawaii'
+                    }
+                },
+                {
+                    slug: 'yukon',
+                    name: 'Yukon',
+                    banner: {
+                        image: 'media/tours/header-yukon.jpg',
+                        heading: 'Pop Tours',
+                        subText: 'Yukon'
+                    }
+                }
             ]);
         }
     }
