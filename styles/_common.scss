@@ -27,6 +27,12 @@ a {
   }
 }
 
+p {
+  border-left: 1px solid $highlight-light;
+  padding-left: 1em;
+  margin: 2em 0 2em;
+}
+
 .page-wrapper {
   @include outer-container;
 }
