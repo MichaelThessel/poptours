@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+
+  img.banner {
+    width: 100%;
+  }
+
+  .logo {
+    @include span-columns(4);
+    @include media($mobile) {
+      @include span-columns(12);
+      position: relative;
+    }
+
+    padding: 0.5em 1em;
+    background-color: $black;
+    color: $white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-weight: 700;
+  }
+}

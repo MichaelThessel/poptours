@@ -1,5 +1,10 @@
 @import '../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/bourbon';
 @import '../node_modules/bourbon-neat/app/assets/stylesheets/neat';
 
-@import 'app/home/home';
+@import 'reset';
+@import 'variables';
+@import 'colors';
 
+@import 'components/header';
+
+@import 'app/home/home';
