@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './home/home'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './home/home', './tours/tours', './tours/tours.service', './places/places.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './home/home'], function(ex
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, home_1;
+    var core_1, router_1, home_1, tours_1, tours_service_1, places_service_1;
     var AppComponent;
     return {
         setters:[
@@ -22,6 +22,15 @@ System.register(['angular2/core', 'angular2/router', './home/home'], function(ex
             },
             function (home_1_1) {
                 home_1 = home_1_1;
+            },
+            function (tours_1_1) {
+                tours_1 = tours_1_1;
+            },
+            function (tours_service_1_1) {
+                tours_service_1 = tours_service_1_1;
+            },
+            function (places_service_1_1) {
+                places_service_1 = places_service_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -32,7 +41,7 @@ System.register(['angular2/core', 'angular2/router', './home/home'], function(ex
                         selector: 'my-app',
                         templateUrl: 'app/app.component.html',
                         directives: [router_1.ROUTER_DIRECTIVES],
-                        providers: [router_1.ROUTER_PROVIDERS]
+                        providers: [router_1.ROUTER_PROVIDERS, tours_service_1.ToursService, places_service_1.PlacesService]
                     }),
                     router_1.RouteConfig([
                         {
@@ -40,7 +49,12 @@ System.register(['angular2/core', 'angular2/router', './home/home'], function(ex
                             name: 'Home',
                             component: home_1.Home,
                             useAsDefasult: true,
-                        }
+                        },
+                        {
+                            path: '/tours/:slug',
+                            name: 'Tours',
+                            component: tours_1.Tours,
+                        },
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
