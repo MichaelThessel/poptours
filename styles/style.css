@@ -474,6 +474,10 @@ footer {
   padding-left: 0;
   list-style: none; }
 
+.home .side .places li:before {
+  content: '\25B6';
+  margin-right: .3em; }
+
 .home .intro {
   float: left;
   display: block;

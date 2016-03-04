@@ -4,6 +4,12 @@
       padding-left: 0;
       list-style: none;
     }
+    .places {
+      li:before {
+        content: '\25B6';
+        margin-right: .3em;
+      }
+    }
   }
 
   .intro {

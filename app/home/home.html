@@ -3,18 +3,22 @@
   <div class="home content">
 
     <div class="side">
-      <h3>Places</h3>
-      <ul *ngIf="places">
-        <li *ngFor="#place of places"><a (click)="navigateTours(place)">{{place.name}}</a></li>
-      </ul>
+      <div class="places">
+        <h3>Places</h3>
+        <ul *ngIf="places">
+          <li *ngFor="#place of places"><a (click)="navigateTours(place)">{{place.name}}</a></li>
+        </ul>
+      </div>
 
-      <h3>Featured</h3>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-      </ul>
+      <div class="featured">
+        <h3>Featured</h3>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
     </div>
 
     <div class="intro">
