@@ -39,6 +39,12 @@ System.register(['angular2/core', 'angular2/router', './home/home', './tours/tou
             AppComponent = (function () {
                 function AppComponent() {
                 }
+                AppComponent.prototype.getCopyYear = function (start) {
+                    var date = new Date(), year = date.getFullYear();
+                    if (year == start)
+                        return year;
+                    return start + ' - ' + year;
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',

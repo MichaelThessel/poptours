@@ -33,4 +33,13 @@ import {PlacesService} from './places/places.service';
     }
 ])
 
-export class AppComponent {}
+export class AppComponent {
+    getCopyYear(start) {
+        var date = new Date(),
+            year = date.getFullYear();
+
+        if (year == start) return year;
+
+        return start + ' - ' + year;
+    }
+}

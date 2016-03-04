@@ -411,6 +411,25 @@ a {
       .side:last-child {
         margin-right: 0; } }
 
+body {
+  position: relative;
+  margin-bottom: 3em; }
+
+footer {
+  background: #31CCF5;
+  color: #FFF;
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: -3.5em;
+  font-size: 85%; }
+  footer span {
+    display: block;
+    padding: 0.5em; }
+  footer a {
+    color: #FFF; }
+
 .header {
   position: relative; }
   .header img.banner {
