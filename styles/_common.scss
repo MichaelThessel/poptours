@@ -25,3 +25,10 @@ h6 {
 .content {
   padding: 1em;
 }
+
+.side {
+  @include span-columns(3);
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+}

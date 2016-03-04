@@ -1,16 +1,13 @@
 .home {
-  .places {
-    @include span-columns(2);
-    @include media($mobile) {
-      @include span-columns(12);
-    }
+  .side {
     ul {
       padding-left: 0;
       list-style: none;
     }
   }
+
   .intro {
-    @include span-columns(10);
+    @include span-columns(9);
     @include media($mobile) {
       @include span-columns(12);
     }

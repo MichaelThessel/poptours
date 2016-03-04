@@ -388,6 +388,22 @@ h6 {
 .content {
   padding: 1em; }
 
+.side {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .side:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    .side {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .side:last-child {
+        margin-right: 0; } }
+
 .header {
   position: relative; }
   .header img.banner {
@@ -424,30 +440,15 @@ h6 {
       border-bottom: 2px solid #89E0F8;
       padding-right: 2em; }
 
-.home .places {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%; }
-  .home .places:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 500px) {
-    .home .places {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .home .places:last-child {
-        margin-right: 0; } }
-  .home .places ul {
-    padding-left: 0;
-    list-style: none; }
+.home .side ul {
+  padding-left: 0;
+  list-style: none; }
 
 .home .intro {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%; }
+  width: 74.41059%; }
   .home .intro:last-child {
     margin-right: 0; }
   @media screen and (max-width: 500px) {
