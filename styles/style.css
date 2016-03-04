@@ -376,6 +376,13 @@ h5,
 h6 {
   color: #31CCF5; }
 
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer; }
+  a:hover {
+    text-decoration: underline; }
+
 .page-wrapper {
   max-width: 1200px;
   margin-left: auto;
@@ -434,11 +441,15 @@ h6 {
           margin-right: 0; } }
     .header .logo h1 {
       margin: 0.5em 0 0; }
+      .header .logo h1 a {
+        color: #FFF; }
+        .header .logo h1 a:hover {
+          text-decoration: none; }
     .header .logo .sub-text {
       display: inline-block;
       margin-bottom: 1em;
       border-bottom: 2px solid #89E0F8;
-      padding-right: 2em; }
+      padding-right: 1em; }
 
 .home .side ul {
   padding-left: 0;

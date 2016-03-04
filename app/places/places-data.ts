@@ -6,7 +6,6 @@ export var PLACES: Place[] = [
         name: 'Hawaii',
         banner: {
             image: 'media/tours/header-hawaii.jpg'
-            heading: 'Pop Tours',
             subText: 'Hawaii'
         }
     },
@@ -15,7 +14,6 @@ export var PLACES: Place[] = [
         name: 'Yukon',
         banner: {
             image: 'media/tours/header-yukon.jpg'
-            heading: 'Pop Tours',
             subText: 'Yukon'
         }
     }

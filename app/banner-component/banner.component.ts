@@ -1,4 +1,5 @@
 import {Component, OnInit} from 'angular2/core';
+import {Router} from 'angular2/router';
 
 import {Banner} from 'banner';
 
@@ -10,4 +11,10 @@ import {Banner} from 'banner';
 
 export class BannerComponent {
     banner: Banner;
+
+    constructor(private _router: Router) {}
+
+    navigateHome() {
+        this._router.navigate(['Home']);
+    }
 }

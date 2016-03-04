@@ -18,6 +18,15 @@ h6 {
   color: $highlight;
 }
 
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .page-wrapper {
   @include outer-container;
 }
