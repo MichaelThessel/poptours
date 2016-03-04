@@ -6,9 +6,9 @@
 @import 'colors';
 @import 'common';
 
-@import 'components/header';
+@import '../app/banner-component/banner';
 
-@import 'app/home/home';
-@import 'app/tours/tours';
-@import 'app/tour/tour';
+@import '../app/home/home';
+@import '../app/tours/tours';
+@import '../app/tour/tour';
 
