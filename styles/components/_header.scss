@@ -6,11 +6,21 @@
   }
 
   .logo {
-    @include span-columns(4);
+    @include span-columns(6);
     @include media($mobile) {
       @include span-columns(12);
       position: relative;
       font-size: 80%;
+    }
+
+    h1 {
+      margin: 0.5em 0 0;
+    }
+
+    .sub-text {
+      display: inline-block;
+      margin-bottom: 1em;
+      border-bottom: 1px solid $highlight;
     }
     padding-left: 1em;
     background-color: $black;
