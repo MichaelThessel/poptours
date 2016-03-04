@@ -20,14 +20,17 @@
     .sub-text {
       display: inline-block;
       margin-bottom: 1em;
-      border-bottom: 1px solid $highlight;
+      border-bottom: 2px solid $highlight-light;
+      padding-right: 2em;
     }
+
     padding-left: 1em;
-    background-color: $black;
     color: $white;
     position: absolute;
     left: 0;
     bottom: 0;
     font-weight: 700;
+
+    background-color: rgba($highlight, 0.975);
   }
 }

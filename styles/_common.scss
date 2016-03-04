@@ -10,3 +10,18 @@ h5,
 h6 {
   font-family: 'Open Sans', sans-serif;
 }
+
+h3,
+h4,
+h5,
+h6 {
+  color: $highlight;
+}
+
+.page-wrapper {
+  @include outer-container;
+}
+
+.content {
+  padding: 1em;
+}

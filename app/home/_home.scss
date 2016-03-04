@@ -1,4 +1,18 @@
 .home {
-  @include outer-container;
-
+  .places {
+    @include span-columns(2);
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+  }
+  .intro {
+    @include span-columns(10);
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+  }
 }
