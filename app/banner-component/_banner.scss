@@ -11,6 +11,7 @@
       @include span-columns(12);
       position: relative;
       font-size: 80%;
+      background-color: $black;
     }
 
     h1 {
@@ -24,8 +25,7 @@
 
     .sub-text {
       display: inline-block;
-      margin-bottom: 1em;
-      border-bottom: 2px solid $highlight-light;
+      margin-bottom: .5em;
       padding-right: 1em;
     }
 
@@ -36,7 +36,7 @@
     bottom: 0;
     font-weight: 700;
 
-    background-color: rgba($highlight, 0.75);
+    background-color: rgba($black, 0.8);
     border-top: 1px solid darken($highlight, 15);
     border-right: 1px solid darken($highlight, 15);
   }
