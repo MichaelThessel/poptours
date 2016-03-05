@@ -379,11 +379,6 @@ a {
   a:hover {
     text-decoration: underline; }
 
-p {
-  border-left: 1px solid #89E0F8;
-  padding-left: 1em;
-  margin: 2em 0 2em; }
-
 .page-wrapper {
   max-width: 1200px;
   margin-left: auto;
@@ -397,6 +392,11 @@ p {
   padding: 1em; }
   .content h1 {
     border-bottom: 1px solid #89E0F8; }
+  .content p {
+    border-left: 1px solid #89E0F8;
+    padding-left: 1em;
+    margin: 2em 0 2em;
+    text-align: justify; }
 
 .side {
   float: left;

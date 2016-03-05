@@ -22,12 +22,6 @@ a {
   }
 }
 
-p {
-  border-left: 1px solid $highlight-light;
-  padding-left: 1em;
-  margin: 2em 0 2em;
-}
-
 .page-wrapper {
   @include outer-container;
 }
@@ -36,6 +30,12 @@ p {
   padding: 1em;
   h1 {
     border-bottom: 1px solid $highlight-light;
+  }
+  p {
+    border-left: 1px solid $highlight-light;
+    padding-left: 1em;
+    margin: 2em 0 2em;
+    text-align: justify;
   }
 }
 
