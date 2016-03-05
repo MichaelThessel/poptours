@@ -23,6 +23,7 @@
   "devDependencies": {
     "concurrently": "^2.0.0",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.3",
     "gulp-sass": "^2.2.0",
     "lite-server": "^2.1.0",
     "node-bourbon": "^4.2.3",
