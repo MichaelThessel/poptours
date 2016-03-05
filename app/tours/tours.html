@@ -2,7 +2,9 @@
 
 <div class="page-wrapper" *ngIf="tours">
   <div class="tours content">
-    <h3>Tours</h3>
+    <h1 *ngIf="!place">Tours</h1>
+    <h1 *ngIf="place">Tours {{place.name}}</h1>
+
     <ul>
       <li *ngFor="#tour of tours"><a (click)="navigateTour(tour)">{{tour.title}}</a></li>
     </ul>
