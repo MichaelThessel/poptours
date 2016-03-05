@@ -6,7 +6,7 @@
   }
 
   .logo {
-    @include span-columns(6);
+    @include span-columns(4);
     @include media($mobile) {
       @include span-columns(12);
       position: relative;

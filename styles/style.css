@@ -368,7 +368,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase; }
 
 h3,
 h4,
@@ -456,7 +457,7 @@ footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
+    width: 31.76157%;
     padding-left: 1em;
     color: #FFF;
     position: absolute;
