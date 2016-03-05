@@ -395,6 +395,8 @@ p {
 
 .content {
   padding: 1em; }
+  .content h1 {
+    border-bottom: 1px solid #89E0F8; }
 
 .side {
   float: left;
