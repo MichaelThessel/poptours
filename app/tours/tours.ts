@@ -29,7 +29,7 @@ export class Tours implements OnInit {
     ngOnInit() {
         let slug = this._routeParams.get('slug');
 
-        this._placesService.getPlace(slug).
+        this._placesService.getPlaceBySlug(slug).
             then(place => this.place = place).
             then(
                 tours => this._toursService.getToursByPlace(this.place)

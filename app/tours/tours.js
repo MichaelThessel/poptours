@@ -41,7 +41,7 @@ System.register(['angular2/core', 'angular2/router', '../banner-component/banner
                 Tours.prototype.ngOnInit = function () {
                     var _this = this;
                     var slug = this._routeParams.get('slug');
-                    this._placesService.getPlace(slug).
+                    this._placesService.getPlaceBySlug(slug).
                         then(function (place) { return _this.place = place; }).
                         then(function (tours) { return _this._toursService.getToursByPlace(_this.place)
                         .then(function (tours) { return _this.tours = tours; })

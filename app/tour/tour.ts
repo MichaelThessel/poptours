@@ -23,7 +23,7 @@ export class Tour implements OnInit {
     ngOnInit() {
         let slug = this._routeParams.get('slug');
 
-        this._toursService.getTour(slug).
+        this._toursService.getTourBySlug(slug).
             then(tour => this.tour = tour).
             then(banner => this.bannerSettings = this.tour.banner);
     }

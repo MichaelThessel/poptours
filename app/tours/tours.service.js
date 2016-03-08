@@ -27,7 +27,7 @@ System.register(['angular2/core', './tours-data'], function(exports_1, context_1
                 ToursService.prototype.getTours = function () {
                     return Promise.resolve(tours_data_1.TOURS);
                 };
-                ToursService.prototype.getTour = function (slug) {
+                ToursService.prototype.getTourBySlug = function (slug) {
                     return Promise.resolve(tours_data_1.TOURS).then(function (tours) { return tours.filter(function (tour) { return tour.slug == slug; })[0]; });
                 };
                 ToursService.prototype.getToursByPlace = function (place) {

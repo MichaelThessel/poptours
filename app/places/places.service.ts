@@ -6,7 +6,7 @@ import {PLACES} from './places-data';
         return Promise.resolve(PLACES);
     }
 
-    getPlace(slug: string) {
+    getPlaceBySlug(slug: string) {
         return Promise.resolve(PLACES).then(
             places => places.filter(place => place.slug == slug)[0]
         );

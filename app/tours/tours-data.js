@@ -7,6 +7,7 @@ System.register([], function(exports_1, context_1) {
         execute: function() {
             exports_1("TOURS", TOURS = [
                 {
+                    id: 1,
                     slug: 'test-tour1',
                     title: "Hawaii First test tour",
                     place: "hawaii",

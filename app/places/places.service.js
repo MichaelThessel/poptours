@@ -27,7 +27,7 @@ System.register(['angular2/core', './places-data'], function(exports_1, context_
                 PlacesService.prototype.getPlaces = function () {
                     return Promise.resolve(places_data_1.PLACES);
                 };
-                PlacesService.prototype.getPlace = function (slug) {
+                PlacesService.prototype.getPlaceBySlug = function (slug) {
                     return Promise.resolve(places_data_1.PLACES).then(function (places) { return places.filter(function (place) { return place.slug == slug; })[0]; });
                 };
                 PlacesService = __decorate([

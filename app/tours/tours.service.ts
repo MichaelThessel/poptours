@@ -8,7 +8,7 @@ import {PlacesService} from '../places/places.service';
         return Promise.resolve(TOURS);
     }
 
-    getTour(slug: string) {
+    getTourBySlug(slug: string) {
         return Promise.resolve(TOURS).then(
             tours => tours.filter(tour => tour.slug == slug)[0]
         );
