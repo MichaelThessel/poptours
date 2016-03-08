@@ -1,7 +1,6 @@
 import {Injectable} from 'angular2/core';
 import {TOURS} from './tours-data';
 import {Place} from './tour';
-import {PlacesService} from '../places/places.service';
 
 @Injectable() export class ToursService {
     getTours() {
