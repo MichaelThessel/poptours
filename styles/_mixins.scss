@@ -1,0 +1,11 @@
+@mixin image-overlay() {
+  color: $white;
+  position: absolute;
+
+  background-color: rgba($black, 0.8);
+  @include media($mobile) {
+    border: 0;
+  }
+  border-top: 1px solid darken($highlight, 15);
+  border-right: 1px solid darken($highlight, 15);
+}

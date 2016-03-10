@@ -5,8 +5,11 @@
     <h1 *ngIf="!place">Tours</h1>
     <h1 *ngIf="place">Tours {{place.name}}</h1>
 
-    <ul>
-      <li *ngFor="#tour of tours"><a (click)="navigateTour(tour)">{{tour.title}}</a></li>
-    </ul>
+    <div class="tours">
+      <div *ngFor="#tour of tours" class="tour" (click)="navigateTour(tour)">
+        <img src="/media/tours/{{tour.id}}/thumb.jpg" />
+        <div class="title">{{tour.title}}</div>
+      </div>
+    </div>
   </div>
 </div>

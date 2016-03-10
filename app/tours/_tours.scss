@@ -1,5 +1,29 @@
 .tours {
   &.content {
     @include span-columns(12);
+    .tour {
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+      @include span-columns(4);
+      @include omega(3n);
+
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 1em;
+
+      img {
+        width: 100%;
+      }
+
+      .title {
+        position: absolute;
+        bottom: 0;
+        @include image-overlay();
+        padding: 1em;
+        width: 100%;
+        border-right: none;
+      }
+    }
   }
 }
