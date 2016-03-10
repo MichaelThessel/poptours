@@ -20,7 +20,7 @@ export class FeaturedComponent {
 
     ngOnInit () {
         this._toursService.getFeaturedTours(2).
-            then(tours => this.tours = tours).then(tours=>console.log(tours));
+            then(tours => this.tours = tours);
     }
 
     navigateTour(tour: Tour) {
