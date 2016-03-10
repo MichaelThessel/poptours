@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {HTTP_PROVIDERS,} from 'angular2/http';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
 import {Home} from './home/home';
@@ -11,7 +12,7 @@ import {PlacesService} from './places/places.service';
     selector: 'my-app',
     templateUrl: 'app/app.component.html'
     directives: [ROUTER_DIRECTIVES]
-    providers: [ROUTER_PROVIDERS, ToursService, PlacesService]
+    providers: [ROUTER_PROVIDERS, HTTP_PROVIDERS, ToursService, PlacesService]
 })
 
 @RouteConfig([
