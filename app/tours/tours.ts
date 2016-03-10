@@ -34,7 +34,7 @@ export class Tours implements OnInit {
             then(
                 tours => this._toursService.getToursByPlace(this.place)
                     .then(tours => this.tours = tours)
-                    .then(banner => this.bannerSettings = this.place.banner);
+                    .then(banner => this.bannerSettings = this.place.banner)
             );
     }
 
