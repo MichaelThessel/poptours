@@ -25,6 +25,9 @@ export class Tour implements OnInit {
 
         this._toursService.getTourBySlug(slug).
             then(tour => this.tour = tour).
-            then(banner => this.bannerSettings = this.tour.banner);
+            then(banner => this.bannerSettings = {
+                image: 'media/tours/' + this.tour.id + '/banner.jpg'
+            }
+        );
     }
 }
