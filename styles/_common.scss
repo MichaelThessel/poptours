@@ -32,6 +32,10 @@ a {
     border-bottom: 1px solid $highlight-light;
   }
   p {
+    @include media($mobile) {
+      border: none;
+      padding: 0;
+    }
     border-left: 1px solid $highlight-light;
     padding-left: 1em;
     margin: 2em 0 2em;

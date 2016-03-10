@@ -1,5 +1,36 @@
 .tour {
   &.content {
     @include span-columns(12);
+    .tour-meta {
+      margin-bottom: 2em;
+      ul {
+        @include media($mobile) {
+          padding: 0;
+        }
+        list-style: none;
+        .author {
+          font-style: italic;
+        }
+        li {
+          @include media($mobile) {
+            display: block;
+            margin-bottom: 1em;
+          }
+          display: inline-block;
+          margin-right: 2em;
+        }
+        li:before {
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+
+  .description {
+    background: $highlight;
+    padding: 2em;
+    color: $white;
+    font-size: 1.5em;
+    font-style: italic;
   }
 }
