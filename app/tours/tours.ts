@@ -16,7 +16,7 @@ import {Tour} from '../tour';
 
 export class Tours implements OnInit {
     bannerSettings: Banner;
-    tours: Tours[] = [];
+    tours: Array<Tour> = [];
     place: Place;
 
     constructor(

@@ -2,19 +2,21 @@ import {Component, OnInit} from 'angular2/core';
 import {Router} from 'angular2/router';
 
 import {BannerComponent} from '../banner-component/banner.component';
+import {FeaturedComponent} from '../featured-component/featured.component';
 import {PlacesService} from '../places/places.service';
 import {Place} from '../places/place';
 
 @Component({
     selector: 'my-home',
     templateUrl: './app/home/home.html',
-    directives: [BannerComponent]
+    directives: [BannerComponent, FeaturedComponent]
 })
 
 export class Home implements OnInit {
     bannerSettings: Banner = {
         image: 'media/home/header.jpg',
     };
+    places: Array<Place> = [];
 
     constructor(private _router: Router, private _placesService: PlacesService) {}
 

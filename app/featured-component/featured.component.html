@@ -1,0 +1,9 @@
+<div id="featured">
+  <div class="title"><h3>Featured</h3></div>
+  <ul>
+    <li *ngFor="#tour of tours" (click)="navigateTour(tour)">
+      <img src="/media/tours/{{tour.id}}/thumb.jpg" />
+      <div class="title">{{tour.title}}</div>
+    </li>
+  </ul>
+</div>

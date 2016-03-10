@@ -1,0 +1,26 @@
+#featured {
+  @include media($mobile) {
+    display: none;
+  }
+
+  ul {
+    margin: 0;
+    li {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 1em;
+
+      img {
+        width: 100%;
+      }
+
+      .title {
+        @include image-overlay();
+        bottom: 5px; /* TODO: why is the li not just wrapping the image */
+        width: 100%;
+        border-right: none;
+        padding: .5em;
+      }
+    }
+  }
+}
