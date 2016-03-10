@@ -10,9 +10,9 @@ import {PlacesService} from './places/places.service';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/app.component.html'
-    directives: [ROUTER_DIRECTIVES]
-    providers: [ROUTER_PROVIDERS, HTTP_PROVIDERS, ToursService, PlacesService]
+    templateUrl: 'app/app.component.html',
+    directives: [ROUTER_DIRECTIVES],
+    providers: [ROUTER_PROVIDERS, HTTP_PROVIDERS, ToursService, PlacesService],
 })
 
 @RouteConfig([
