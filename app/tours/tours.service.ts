@@ -18,7 +18,7 @@ import {Tour} from '../tour/tour';
             tours => tours.filter(tour => tour.slug == slug)[0]
         ).then((tour) => {
             this.http.get('/media/tours/' + tour.id + '/content.html')
-                .subscribe(data => { tour.content = data._body; console.log(data)},
+                .subscribe(data => { tour.content = data.text() },
                     err => console.error(err)
                 );
             return tour;
