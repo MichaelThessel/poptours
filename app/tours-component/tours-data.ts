@@ -4,7 +4,7 @@ export var TOURS: Tour[] = [
   {
       id: 1,
       slug: 'the-waikiki-experience',
-      title: "Waikiki Beach ... clash of worlds",
+      title: "Waikiki ... clash of nations",
       description: "Tattooed intelligentsia organic chambray offal, pabst pinterest master cleanse cred. Austin freegan cornhole, street art meditation hella portland YOLO cardigan pitchfork everyday carry organic iPhone. Master cleanse taxidermy drinking vinegar echo park. Trust fund marfa pug, normcore ugh poutine humblebrag cred viral ennui schlitz.",
       place: "hawaii",
       author: "Hawaian Ryan",
