@@ -1,0 +1,32 @@
+#breadcrumb {
+  @include span-columns(12);
+  @include media($mobile) {
+    display: none;
+  }
+
+  padding: 1em 1em 0;
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+
+      &:after {
+        color: $highlight;
+        content: '>' ;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+      }
+
+      &:last-child:after {
+        content: '';
+        display: block;
+        height: 0;
+      }
+    }
+  }
+}
