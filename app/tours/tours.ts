@@ -6,7 +6,8 @@ import {BannerComponent} from '../banner-component/banner.component';
 import {ToursService} from './tours.service';
 import {PlacesService} from '../places/places.service';
 import {Place} from '../places/place';
-import {Tour} from '../tour';
+import {Tour} from '../tours/tour';
+import {Banner} from '../banner-component/banner';
 
 @Component({
     selector: 'tours',

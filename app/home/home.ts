@@ -5,6 +5,7 @@ import {BannerComponent} from '../banner-component/banner.component';
 import {FeaturedComponent} from '../featured-component/featured.component';
 import {PlacesService} from '../places/places.service';
 import {Place} from '../places/place';
+import {Banner} from '../banner-component/banner';
 
 @Component({
     selector: 'my-home',

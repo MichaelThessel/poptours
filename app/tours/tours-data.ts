@@ -1,4 +1,4 @@
-import {Tour} from './tours/tour';
+import {Tour} from '../tours/tour';
 
 export var TOURS: Tour[] = [
   {
@@ -11,6 +11,7 @@ export var TOURS: Tour[] = [
       twitter: "Snowden",
       instagram: "babypuggies",
       web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+      content: ""
   },
   {
       id: 2,
@@ -21,6 +22,8 @@ export var TOURS: Tour[] = [
       author: "Pono Man",
       twitter: "ggreenwald",
       instagram: "cats_of_instagram",
+      web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+      content: ""
   },
   {
       id: 2,
@@ -31,6 +34,8 @@ export var TOURS: Tour[] = [
       author: "Pono Man",
       twitter: "ggreenwald",
       instagram: "cats_of_instagram",
+      web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+      content: ""
   },
   {
       id: 2,
@@ -41,6 +46,8 @@ export var TOURS: Tour[] = [
       author: "Pono Man",
       twitter: "ggreenwald",
       instagram: "cats_of_instagram",
+      web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+      content: ""
   },
   {
       id: 2,
@@ -51,5 +58,7 @@ export var TOURS: Tour[] = [
       author: "Pono Man",
       twitter: "ggreenwald",
       instagram: "cats_of_instagram",
+      web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+      content: ""
   },
 ];

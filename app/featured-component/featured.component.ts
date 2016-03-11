@@ -1,7 +1,7 @@
 import {Component, OnInit} from 'angular2/core';
 import {RouteParams, Router} from 'angular2/router';
 import {ToursService} from '../tours/tours.service';
-import {Tour} from '../tour';
+import {Tour} from '../tours/tour';
 
 @Component({
     selector: 'featured',
@@ -15,7 +15,7 @@ export class FeaturedComponent {
     constructor(
         private _router: Router,
         private _routeParams: RouteParams,
-        private _toursService: ToursService,
+        private _toursService: ToursService
     ) {}
 
     ngOnInit () {

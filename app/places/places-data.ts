@@ -1,4 +1,4 @@
-import {Place} from './places/place';
+import {Place} from './place';
 
 export var PLACES: Place[] = [
     {

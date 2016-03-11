@@ -1,7 +1,7 @@
 import {Component, OnInit} from 'angular2/core';
 import {Router} from 'angular2/router';
 
-import {Banner} from 'banner';
+import {Banner} from './banner';
 
 @Component({
     selector: 'banner',

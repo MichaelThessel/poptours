@@ -20,7 +20,6 @@ import {PlacesService} from './places/places.service';
         path: '/',
         name: 'Home',
         component: Home,
-        useAsDefasult: true,
     },
     {
         path: '/tours/:slug',
@@ -39,8 +38,8 @@ export class AppComponent {
         var date = new Date(),
             year = date.getFullYear();
 
-        if (year == start) return year;
+        if (year == start) return year.toString();
 
-        return start + ' - ' + year;
+        return start.toString() + ' - ' + year.toString();
     }
 }
