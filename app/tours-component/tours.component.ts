@@ -2,12 +2,13 @@ import {Component, OnInit} from 'angular2/core';
 import {RouteParams, Router} from 'angular2/router';
 
 import {BannerComponent} from '../banner-component/banner.component';
+import {Banner} from '../banner-component/banner';
 import {BreadcrumbComponent} from '../breadcrumb-component/breadcrumb.component';
+import {Breadcrumb} from '../breadcrumb-component/breadcrumb';
 import {ToursService} from './tours.service';
 import {PlacesService} from '../places-component/places.service';
 import {Place} from '../places-component/place';
 import {Tour} from '../tour-component/tour';
-import {Banner} from '../banner-component/banner';
 
 @Component({
     selector: 'tours',
@@ -17,7 +18,7 @@ import {Banner} from '../banner-component/banner';
 
 export class ToursComponent implements OnInit {
     bannerSettings: Banner;
-    breadcrumbSettings = [];
+    breadcrumbSettings: Array<Breadcrumb> = [];
     tours: Array<Tour> = [];
     place: Place;
 
@@ -37,7 +38,7 @@ export class ToursComponent implements OnInit {
                 tours => this._toursService.getToursByPlace(this.place)
                     .then(tours => this.tours = tours)
                     .then(() => this.bannerSettings = this.place.banner)
-                    .then(() => this.breadcrumbSettings.push({ title: this.place.name })));
+                    .then(() => this.breadcrumbSettings.push({ title: this.place.name, link: [] })));
     }
 
     navigateTour(tour: Tour) {

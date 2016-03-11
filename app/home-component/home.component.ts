@@ -2,11 +2,12 @@ import {Component, OnInit} from 'angular2/core';
 import {Router} from 'angular2/router';
 
 import {BannerComponent} from '../banner-component/banner.component';
+import {Banner} from '../banner-component/banner';
 import {BreadcrumbComponent} from '../breadcrumb-component/breadcrumb.component';
+import {Breadcrumb} from '../breadcrumb-component/breadcrumb';
 import {FeaturedComponent} from '../featured-component/featured.component';
 import {PlacesService} from '../places-component/places.service';
 import {Place} from '../places-component/place';
-import {Banner} from '../banner-component/banner';
 
 @Component({
     selector: 'my-home',
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
     bannerSettings: Banner = {
         image: 'media/home/header.jpg',
     };
-    breadcrumbSettings = [];
+    breadcrumbSettings: Array<Breadcrumb> = [];
     places: Array<Place> = [];
 
     constructor(private _router: Router, private _placesService: PlacesService) {}
@@ -29,7 +30,7 @@ export class HomeComponent implements OnInit {
     }
 
     navigateTours(place: Place) {
-        let link = ['Tours', { slug: place.slug }];
+        let link = ['Tours', { slug: place.slug, link: [] }];
         this._router.navigate(link);
     }
 }

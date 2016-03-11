@@ -2,9 +2,9 @@
   <div id="breadcrumb">
     <ul>
       <li><a (click)="navigate(['Home'])">Home</a></li>
-      <li *ngFor="#breadcrumb of breadcrumbs">
-        <span *ngIf="breadcrumb.link"><a (click)="navigate(breadcrumb.link)">{{breadcrumb.title}}</a></span>
-        <span *ngIf="!breadcrumb.link">{{breadcrumb.title}}</span>
+      <li *ngFor="#breadcrumb of breadcrumbs; #last = last">
+        <span *ngIf="!last"><a (click)="navigate(breadcrumb.link)">{{breadcrumb.title}}</a></span>
+        <span *ngIf="last">{{breadcrumb.title}}</span>
       </li>
     </ul>
   </div>

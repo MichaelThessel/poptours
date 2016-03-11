@@ -2,8 +2,9 @@ import {Component, OnInit} from 'angular2/core';
 import {RouteParams} from 'angular2/router';
 
 import {BannerComponent} from '../banner-component/banner.component';
-import {BreadcrumbComponent} from '../breadcrumb-component/breadcrumb.component';
 import {Banner} from '../banner-component/banner';
+import {BreadcrumbComponent} from '../breadcrumb-component/breadcrumb.component';
+import {Breadcrumb} from '../breadcrumb-component/breadcrumb';
 import {Tour} from './tour';
 import {Place} from '../places-component/place';
 
@@ -18,7 +19,7 @@ import {PlacesService} from '../places-component/places.service';
 
 export class TourComponent implements OnInit {
     bannerSettings: Banner;
-    breadcrumbSettings = [];
+    breadcrumbSettings: Array<Breadcrumb> = [];
     tour: Tour;
     place: Place;
 
@@ -40,7 +41,7 @@ export class TourComponent implements OnInit {
                 then(place => this.place = place).
                 then(() => {
                     this.breadcrumbSettings.push({ title: this.place.name, link: ['Tours', { slug: this.place.slug }] });
-                    this.breadcrumbSettings.push({ title: this.tour.title });
+                    this.breadcrumbSettings.push({ title: this.tour.title, link: [] });
                 })
             );
     }

@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {Router} from 'angular2/router';
+import {Breadcrumb} from './breadcrumb';
 
 @Component({
     selector: 'breadcrumbs',
@@ -8,7 +9,7 @@ import {Router} from 'angular2/router';
 })
 
 export class BreadcrumbComponent {
-    breadcrumbs: Array<Object> = [];
+    breadcrumbs: Array<Breadcrumb> = [];
 
     constructor(private _router: Router) {}
 
