@@ -3,8 +3,6 @@ import {Router} from 'angular2/router';
 
 import {BannerComponent} from '../banner-component/banner.component';
 import {Banner} from '../banner-component/banner';
-import {BreadcrumbComponent} from '../breadcrumb-component/breadcrumb.component';
-import {Breadcrumb} from '../breadcrumb-component/breadcrumb';
 import {FeaturedComponent} from '../featured-component/featured.component';
 import {PlacesService} from '../places-component/places.service';
 import {Place} from '../places-component/place';
@@ -12,14 +10,13 @@ import {Place} from '../places-component/place';
 @Component({
     selector: 'my-home',
     templateUrl: './app/home-component/home.component.html',
-    directives: [BannerComponent, BreadcrumbComponent, FeaturedComponent]
+    directives: [BannerComponent, FeaturedComponent]
 })
 
 export class HomeComponent implements OnInit {
     bannerSettings: Banner = {
         image: 'media/home/header.jpg',
     };
-    breadcrumbSettings: Array<Breadcrumb> = [];
     places: Array<Place> = [];
 
     constructor(private _router: Router, private _placesService: PlacesService) {}
