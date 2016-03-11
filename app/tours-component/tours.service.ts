@@ -33,7 +33,7 @@ import {Tour} from '../tour-component/tour';
 
     getFeaturedTours(count: number) {
         return Promise.resolve(TOURS).then(
-            tours => this._shuffleTours(tours).slice(0, count)
+            tours => this._shuffleTours(tours.slice()).slice(0, count)
         );
     }
 
