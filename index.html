@@ -7,24 +7,9 @@
 
     <meta name="description" content="Place based political walking tours" />
     <meta name="keywords" content="POP, Politics, Tours, Walking" />
-
-    <!-- 1. Load libraries -->
-    <!-- IE required polyfills, in this exact order -->
-    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
-    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
-    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
-
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-    <script src="node_modules/angular2/bundles/router.dev.js"></script>
-    <script src="node_modules/angular2/bundles/http.dev.js"></script>
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,700italic,400' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/media/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#31CCF5">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/apple-icon-60x60.png">
@@ -40,11 +25,22 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
     <link rel="manifest" href="/media/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/media/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#31CCF5">
 
-    <!-- 2. Configure SystemJS -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,700italic,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+
     <script>
       System.config({
         packages: {
@@ -59,7 +55,6 @@
     </script>
   </head>
 
-  <!-- 3. Display the application -->
   <body>
     <my-app>Loading...</my-app>
 
