@@ -2,8 +2,8 @@ import {Injectable} from 'angular2/core';
 import {Http, Response} from 'angular2/http';
 import {Observable} from 'rxjs/Rx';
 import {TOURS} from './tours-data';
-import {Place} from '../places/place';
-import {Tour} from '../tour/tour';
+import {Place} from '../places-component/place';
+import {Tour} from '../tours-component/tour';
 
 @Injectable() export class ToursService {
 

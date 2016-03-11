@@ -1,7 +1,7 @@
 import {Component, OnInit} from 'angular2/core';
 import {RouteParams, Router} from 'angular2/router';
-import {ToursService} from '../tours/tours.service';
-import {Tour} from '../tours/tour';
+import {ToursService} from '../tours-component/tours.service';
+import {Tour} from '../tours-component/tour';
 
 @Component({
     selector: 'featured',

@@ -1,4 +1,4 @@
-import {Tour} from '../tours/tour';
+import {Tour} from '../tours-component/tour';
 
 export var TOURS: Tour[] = [
   {

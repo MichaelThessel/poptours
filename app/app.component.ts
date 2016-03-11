@@ -2,11 +2,11 @@ import {Component} from 'angular2/core';
 import {HTTP_PROVIDERS,} from 'angular2/http';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
-import {Home} from './home/home';
-import {Tours} from './tours/tours';
-import {Tour} from './tour/tour';
-import {ToursService} from './tours/tours.service';
-import {PlacesService} from './places/places.service';
+import {HomeComponent} from './home-component/home.component';
+import {ToursComponent} from './tours-component/tours.component';
+import {TourComponent} from './tour-component/tour.component';
+import {ToursService} from './tours-component/tours.service';
+import {PlacesService} from './places-component/places.service';
 
 @Component({
     selector: 'my-app',
@@ -19,17 +19,17 @@ import {PlacesService} from './places/places.service';
     {
         path: '/',
         name: 'Home',
-        component: Home,
+        component: HomeComponent,
     },
     {
         path: '/tours/:slug',
         name: 'Tours',
-        component: Tours,
+        component: ToursComponent,
     },
     {
         path: '/tour/:slug',
         name: 'Tour',
-        component: Tour,
+        component: TourComponent,
     }
 ])
 

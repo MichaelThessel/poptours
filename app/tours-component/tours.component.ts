@@ -4,18 +4,18 @@ import {RouteParams, Router} from 'angular2/router';
 import {BannerComponent} from '../banner-component/banner.component';
 
 import {ToursService} from './tours.service';
-import {PlacesService} from '../places/places.service';
-import {Place} from '../places/place';
-import {Tour} from '../tours/tour';
+import {PlacesService} from '../places-component/places.service';
+import {Place} from '../places-component/place';
+import {Tour} from '../tours-component/tour';
 import {Banner} from '../banner-component/banner';
 
 @Component({
     selector: 'tours',
-    templateUrl: 'app/tours/tours.html',
+    templateUrl: 'app/tours-component/tours.component.html',
     directives: [BannerComponent]
 })
 
-export class Tours implements OnInit {
+export class ToursComponent implements OnInit {
     bannerSettings: Banner;
     tours: Array<Tour> = [];
     place: Place;

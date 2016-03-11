@@ -3,16 +3,17 @@ import {RouteParams} from 'angular2/router';
 
 import {BannerComponent} from '../banner-component/banner.component';
 import {Banner} from '../banner-component/banner';
+import {Tour} from '../tours-component/tour';
 
-import {ToursService} from '../tours/tours.service';
+import {ToursService} from '../tours-component/tours.service';
 
 @Component({
     selector: 'tour',
-    templateUrl: 'app/tour/tour.html',
+    templateUrl: 'app/tour-component/tour.component.html',
     directives: [BannerComponent]
 })
 
-export class Tour implements OnInit {
+export class TourComponent implements OnInit {
     bannerSettings: Banner;
     tour: Tour;
 
