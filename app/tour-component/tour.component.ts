@@ -3,7 +3,7 @@ import {RouteParams} from 'angular2/router';
 
 import {BannerComponent} from '../banner-component/banner.component';
 import {Banner} from '../banner-component/banner';
-import {Tour} from '../tours-component/tour';
+import {Tour} from './tour';
 
 import {ToursService} from '../tours-component/tours.service';
 

@@ -6,7 +6,7 @@ import {BannerComponent} from '../banner-component/banner.component';
 import {ToursService} from './tours.service';
 import {PlacesService} from '../places-component/places.service';
 import {Place} from '../places-component/place';
-import {Tour} from '../tours-component/tour';
+import {Tour} from '../tour-component/tour';
 import {Banner} from '../banner-component/banner';
 
 @Component({
