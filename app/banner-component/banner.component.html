@@ -1,6 +1,6 @@
-<div class="banner" *ngIf="banner" (click)="navigateHome()">
+<div class="banner" *ngIf="banner">
   <img class="main" src="{{banner.image}}" />
-  <div class="logo">
+  <div class="logo" (click)="navigateHome()">
     <h1>Pop Tours</h1>
     <span class="sub-text">politics of place</span>
   </div>

@@ -1,6 +1,5 @@
 .banner {
   position: relative;
-  cursor: pointer;
 
   img.main {
     width: 100%;
@@ -30,6 +29,7 @@
     left: 0;
     bottom: 0;
     font-weight: 700;
+    cursor: pointer;
 
     @include image-overlay();
   }
