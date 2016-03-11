@@ -6,10 +6,7 @@
     <h1>{{tour.title}}</h1>
     <div class="tour-meta">
       <ul>
-        <li class="author icon-feather" *ngIf="tour.author">
-          <a href="{{tour.web}}" *ngIf="tour.web">{{tour.author}}</a>
-          <span *ngIf="!tour.web">{{tour.author}}</span>
-        </li>
+        <li class="author icon-feather" *ngIf="tour.author"><a href="{{tour.web}}" *ngIf="tour.web">{{tour.author}}</a><span *ngIf="!tour.web">{{tour.author}}</span></li>
         <li class="instagram icon-instagram" *ngIf="tour.instagram"><a href="https://www.instagram.com/{{tour.instagram}}" target="_blank">{{tour.instagram}}</a></li>
         <li class="twitter icon-twitter" *ngIf="tour.twitter"><a href="https://twitter.com/{{tour.twitter}}" target="_blank">{{tour.twitter}}</a></li>
       </ul>
