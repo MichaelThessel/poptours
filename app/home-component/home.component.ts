@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
     }
 
     navigateTours(place: Place) {
-        let link = ['Tours', { slug: place.slug, link: [] }];
+        let link = ['Tours', { slug: place.slug }];
         this._router.navigate(link);
     }
 }
