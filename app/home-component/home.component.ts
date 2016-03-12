@@ -4,13 +4,14 @@ import {Router} from 'angular2/router';
 import {BannerComponent} from '../banner-component/banner.component';
 import {Banner} from '../banner-component/banner';
 import {FeaturedComponent} from '../featured-component/featured.component';
+import {InstagramComponent} from '../instagram-component/instagram.component';
 import {PlacesService} from '../places-component/places.service';
 import {Place} from '../places-component/place';
 
 @Component({
     selector: 'my-home',
     templateUrl: './app/home-component/home.component.html',
-    directives: [BannerComponent, FeaturedComponent]
+    directives: [BannerComponent, FeaturedComponent, InstagramComponent]
 })
 
 export class HomeComponent implements OnInit {

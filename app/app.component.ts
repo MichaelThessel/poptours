@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {HTTP_PROVIDERS,} from 'angular2/http';
+import {HTTP_PROVIDERS, JSONP_PROVIDERS} from 'angular2/http';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
 import {HomeComponent} from './home-component/home.component';
@@ -7,12 +7,13 @@ import {ToursComponent} from './tours-component/tours.component';
 import {TourComponent} from './tour-component/tour.component';
 import {ToursService} from './tours-component/tours.service';
 import {PlacesService} from './places-component/places.service';
+import {InstagramService} from './instagram-component/instagram.service';
 
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
     directives: [ROUTER_DIRECTIVES],
-    providers: [ROUTER_PROVIDERS, HTTP_PROVIDERS, ToursService, PlacesService],
+    providers: [ROUTER_PROVIDERS, HTTP_PROVIDERS, JSONP_PROVIDERS, ToursService, PlacesService, InstagramService],
 })
 
 @RouteConfig([
