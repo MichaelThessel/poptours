@@ -1,7 +1,8 @@
-node_modules
-npm-debug.log
 app/*.js
 app/*.js.map
 app/*/*.js
 app/*/*.js.map
+dist/*
+node_modules
+npm-debug.log
 styles/*.css
