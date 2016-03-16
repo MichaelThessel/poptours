@@ -16,7 +16,7 @@
 
       .title {
         @include image-overlay();
-        bottom: 5px; /* TODO: why is the li not just wrapping the image */
+        bottom: 0;
         width: 100%;
         border-right: none;
         padding: .5em;
