@@ -62,7 +62,7 @@ gulp.task('copy:libs', ['clean'], function () {
  */
 gulp.task('copy:assets', ['clean'], function() {
     return gulp
-        .src(['app/**/*', 'index.html', 'styles/style.css', '!app/**/*.ts', 'media/**/*' , 'fonts/**/*'], { base : './' })
+        .src(['app/**/*', 'index.html', 'systemjs.config.js', 'styles/style.css', '!app/**/*.ts', 'media/**/*' , 'fonts/**/*'], { base : './' })
         .pipe(gulp.dest('dist'));
 });
 
