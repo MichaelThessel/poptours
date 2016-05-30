@@ -24,12 +24,12 @@ export var TOURS: Tour[] = [
       web: ""
   },
   {
-      id: 2,
-      slug: "foo",
-      title: "",
-      description: "",
+      id: 3,
+      slug: "decolonization-its-wai-tal",
+      title: "Decolonization: It's Wai-tal",
+      description: "The Native Hawaiians suffered/continue to suffer a tremendous injustice. The atrocities committed by the American government will sorely be felt throughout many, many generations. One of the more prominent wounds that poses a more significant risk to the future of all of Hawai’i is the misappropriation of natural resources, wai (water) in particular. Due to the utilization of western’s influence in the management of wai in place of traditional, Hawaiian sustainable practices, impending consequences looms around Hawai’i’s future.",
       place: "hawaii",
-      author: "",
+      author: "Alexis Mukaida",
       twitter: "",
       instagram: "",
       web: ""
