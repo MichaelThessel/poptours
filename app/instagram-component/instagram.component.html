@@ -1,7 +1,7 @@
 <div id="instagram" *ngIf="posts">
   <div class="title"><h3>#poptours</h3></div>
   <ul>
-    <li *ngFor="#post of posts">
+    <li *ngFor="let post of posts">
       <a href="{{post.link}}" target="_blank">
         <img src="{{post.images.low_resolution.url}}" />
         <span class="caption">

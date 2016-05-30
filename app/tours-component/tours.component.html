@@ -7,7 +7,7 @@
     <h1 *ngIf="place">Tours {{place.name}}</h1>
 
     <div class="tours">
-      <div *ngFor="#tour of tours" class="tour" (click)="navigateTour(tour)">
+      <div *ngFor="let tour of tours" class="tour" (click)="navigateTour(tour)">
         <img src="/media/tours/{{tour.id}}/thumb.jpg" />
         <div class="title">{{tour.title}}</div>
       </div>

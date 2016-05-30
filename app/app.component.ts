@@ -1,6 +1,6 @@
-import {Component} from 'angular2/core';
-import {HTTP_PROVIDERS, JSONP_PROVIDERS} from 'angular2/http';
-import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+import {Component} from '@angular/core';
+import {HTTP_PROVIDERS, JSONP_PROVIDERS} from '@angular/http';
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router-deprecated';
 
 import {HomeComponent} from './home-component/home.component';
 import {ToursComponent} from './tours-component/tours.component';
