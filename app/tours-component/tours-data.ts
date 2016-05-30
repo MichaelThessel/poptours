@@ -14,6 +14,39 @@ export var TOURS: Tour[] = [
   },
   {
       id: 2,
+      slug: "big-trouble-in-little-paradise",
+      title: "Big Trouble in Little Paradise",
+      description: "There is a growing concern with human rights in Hawaii today, which is integrally connected to the impact of tourism on Native Hawaiian’s and their communities. The problem as a whole is tourism, but to be more precise, sports tourism. What’s problematic is how the sports tourism industry seems to have little or no regard to the well-being of the Hawaiian community.",
+      place: "hawaii",
+      author: "Aaron Sonstein",
+      twitter: "",
+      instagram: "",
+      web: ""
+  },
+  {
+      id: 2,
+      slug: "foo",
+      title: "",
+      description: "",
+      place: "hawaii",
+      author: "",
+      twitter: "",
+      instagram: "",
+      web: ""
+  },
+  {
+      id: 2,
+      slug: "foo",
+      title: "",
+      description: "",
+      place: "hawaii",
+      author: "",
+      twitter: "",
+      instagram: "",
+      web: ""
+  },
+  {
+      id: 2,
       slug: "foo",
       title: "",
       description: "",
