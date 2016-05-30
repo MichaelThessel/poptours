@@ -3,62 +3,24 @@ import {Tour} from '../tour-component/tour';
 export var TOURS: Tour[] = [
   {
       id: 1,
-      slug: 'the-waikiki-experience',
-      title: "Waikiki ... clash of nations",
-      description: "Tattooed intelligentsia organic chambray offal, pabst pinterest master cleanse cred. Austin freegan cornhole, street art meditation hella portland YOLO cardigan pitchfork everyday carry organic iPhone. Master cleanse taxidermy drinking vinegar echo park. Trust fund marfa pug, normcore ugh poutine humblebrag cred viral ennui schlitz.",
+      slug: "the-forgotten-history-of-kakaako",
+      title: "The Forgotten History of Kaka’ako ",
+      description: "Kaka’ako was once once a thriving community with agricultural terraces, taro plantations, salt ponds and home to docks for foreign ships. Also, many ali’i called this place home. Today, Kaka’ako is one of the fastest growing neighborhoods in all of Oahu. There are several examples of places in Kaka’ako currently undergoing construction and development that can be seen by everyday pedestrians. These recent developments will likely price out many of the people who have called Kaka’ako home and make living their possible for only those who can afford it. Along with the rising cost of living, these new urban developments will destroy the cultural significance and history of Kaka’ako that was once present in the community.",
       place: "hawaii",
-      author: "Hawaian Ryan",
-      twitter: "Snowden",
-      instagram: "babypuggies",
-      web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
-      content: ""
+      author: "Aaron Falaniko",
+      twitter: "",
+      instagram: "",
+      web: ""
   },
   {
       id: 2,
-      slug: 'hanauma-bay',
-      title: "Hanauma Bay - Sacrifice to Tourism",
-      description: "Cronut hammock godard, semiotics squid forage butcher man bun",
+      slug: "foo",
+      title: "",
+      description: "",
       place: "hawaii",
-      author: "Pono Man",
-      twitter: "ggreenwald",
-      instagram: "cats_of_instagram",
-      web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
-      content: ""
-  },
-  {
-      id: 2,
-      slug: 'hanauma-bay',
-      title: "Hanauma Bay - Sacrifice to Tourism",
-      description: "Cronut hammock godard, semiotics squid forage butcher man bun",
-      place: "hawaii",
-      author: "Pono Man",
-      twitter: "ggreenwald",
-      instagram: "cats_of_instagram",
-      web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
-      content: ""
-  },
-  {
-      id: 2,
-      slug: 'hanauma-bay',
-      title: "Hanauma Bay - Sacrifice to Tourism",
-      description: "Cronut hammock godard, semiotics squid forage butcher man bun",
-      place: "hawaii",
-      author: "Pono Man",
-      twitter: "ggreenwald",
-      instagram: "cats_of_instagram",
-      web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
-      content: ""
-  },
-  {
-      id: 2,
-      slug: 'hanauma-bay',
-      title: "Hanauma Bay - Sacrifice to Tourism",
-      description: "Cronut hammock godard, semiotics squid forage butcher man bun",
-      place: "hawaii",
-      author: "Pono Man",
-      twitter: "ggreenwald",
-      instagram: "cats_of_instagram",
-      web: "https://www.youtube.com/watch?v=QH2-TGUlwu4",
-      content: ""
+      author: "",
+      twitter: "",
+      instagram: "",
+      web: ""
   },
 ];
