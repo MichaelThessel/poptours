@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var webpack = require('gulp-webpack');
 var del = require('del');
+var minify = require('gulp-minify');
 
 var sassPaths = ['styles/style.scss'];
 
@@ -38,7 +39,8 @@ gulp.task('clean', function () {
 gulp.task('pack', function () {
     return gulp.src('app/main.js')
         .pipe(webpack( require('./webpack.config.js') ))
-        .pipe(gulp.dest('dist/'));
+        .pipe(minify())
+        .pipe(gulp.dest('./'));
 });
 
 /*
@@ -56,7 +58,7 @@ gulp.task('copy:libs', ['clean'], function () {
  */
 gulp.task('copy:assets', ['clean'], function() {
     return gulp
-        .src(['app/**/*', '!app/**/*.ts', 'bundle.js', 'index.html', 'styles/style.css', 'media/**/*' , 'fonts/**/*'], { base : './' })
+        .src(['app/**/*', '!app/**/*.ts', 'bundle-min.js', 'index.html', 'styles/style.css', 'media/**/*' , 'fonts/**/*'], { base : './' })
         .pipe(gulp.dest('dist'));
 });
 
