@@ -2,12 +2,8 @@
   "name": "poptours",
   "version": "0.1.0",
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "typings": "typings",
-    "postinstall": "typings install"
+    "build": "webpack",
+    "start": "webpack-dev-server --host 0.0.0.0"
   },
   "license": "ISC",
   "dependencies": {
@@ -29,9 +25,8 @@
     "bourbon-neat": "^1.7.3"
   },
   "devDependencies": {
-    "concurrently": "^2.0.0",
-    "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
+    "ts-loader": "^0.7.2",
     "typings":"^1.0.4",
     "canonical-path": "0.0.2",
     "http-server": "^0.9.0",

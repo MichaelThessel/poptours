@@ -3,10 +3,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
-var typescript = require('gulp-typescript');
-var sourcemaps = require('gulp-sourcemaps');
+var webpack = require('gulp-webpack');
 var del = require('del');
-var tscConfig = require('./tsconfig.json');
 
 var sassPaths = ['styles/style.scss'];
 
@@ -37,13 +35,10 @@ gulp.task('clean', function () {
 /*
  * Compile Typescript
  */
-gulp.task('ts:compile', ['clean'], function () {
-    return gulp
-        .src('app/**/*.ts')
-        .pipe(sourcemaps.init())
-        .pipe(typescript(tscConfig.compilerOptions))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('dist/app'));
+gulp.task('pack', function () {
+    return gulp.src('app/main.js')
+        .pipe(webpack( require('./webpack.config.js') ))
+        .pipe(gulp.dest('dist/'));
 });
 
 /*
@@ -56,16 +51,15 @@ gulp.task('copy:libs', ['clean'], function () {
         ])
         .pipe(gulp.dest('dist/node_modules'));
 });
-
 /*
  * Copy assets
  */
 gulp.task('copy:assets', ['clean'], function() {
     return gulp
-        .src(['app/**/*', 'index.html', 'systemjs.config.js', 'styles/style.css', '!app/**/*.ts', 'media/**/*' , 'fonts/**/*'], { base : './' })
+        .src(['app/**/*', '!app/**/*.ts', 'bundle.js', 'index.html', 'styles/style.css', 'media/**/*' , 'fonts/**/*'], { base : './' })
         .pipe(gulp.dest('dist'));
 });
 
 
 // Build the app for deployment
-gulp.task('build', ['sass:compile', 'ts:compile', 'copy:libs', 'copy:assets']);
+gulp.task('build', ['pack', 'sass:compile', 'copy:libs', 'copy:assets']);
