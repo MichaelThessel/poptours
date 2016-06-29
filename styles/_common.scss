@@ -14,12 +14,7 @@ h6 {
 }
 
 a {
-  text-decoration: none;
   color: $black;
-  cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 img { display: block; }
