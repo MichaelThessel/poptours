@@ -49,9 +49,12 @@ gulp.task('pack', function () {
 gulp.task('copy:libs', ['clean'], function () {
     return gulp
         .src([
-            'node_modules/**/*'
-        ])
-        .pipe(gulp.dest('dist/node_modules'));
+            'node_modules/zone.js/**/*',
+            'node_modules/core-js/**/*',
+            'node_modules/reflect-metadata/**/*',
+            'node_modules/systemjs/**/*',
+        ], { base: '.' })
+        .pipe(gulp.dest('dist'));
 });
 /*
  * Copy assets
