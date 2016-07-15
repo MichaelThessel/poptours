@@ -12,6 +12,6 @@ export class InstagramComponent {
     constructor(private _instagramService: InstagramService) {}
 
     ngOnInit() {
-        this._instagramService.getPosts(4).subscribe(posts => this.posts = posts);
+        this._instagramService.getPosts(2).subscribe(posts => this.posts = posts);
     }
 }
