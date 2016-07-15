@@ -42,6 +42,8 @@ img { display: block; }
 }
 
 .side {
+  padding: 0 1em;
+
   @include span-columns(3);
   @include media($mobile) {
     @include span-columns(12);
